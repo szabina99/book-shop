@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">BookShop</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="textwebshop">Könyv webshop</string>
+    <string name="register">Regisztráció</string>
+    <string name="email">E-mail cím</string>
+    <string name="passwordAgain">Jelszó megerősítése</string>
+    <string name="cancel">Vissza</string>
+    <string name="adress">Cím</string>
+    <string name="seller">Eladó</string>
+    <string name="customer">Vásárló</string>
+
+    <string name="title_placeholder">Title</string>
+    <string name="item_placeholder">Leírás</string>
+    <string name="item_info_placeholder">Információk</string>
+    <string name="subtitle_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor diam fringilla tellus, eu euismod mauris neque at neque.</string>
+    <string name="add_to_cart">Kosárba</string>
+    <string name="delete">Törlés</string>
+
+
+    <string-array name="shopping_item_names">
+        <item>Stargirl</item>
+        <item>Csak mi ketten!</item>
+        <item>Egy kis apróság</item>
+        <item>Álom két keréken</item>
+        <item>Válassz engem</item>
+        <item>Kulcsra zárt szív</item>
+        <item>Lány a vízből</item>
+        <item>Instant karma</item>
+        <item>Shuri</item>
+        <item>Sadie</item>
+        <item>Miért</item>
+        <item>Csitt csitt!</item>
+        <item>Árnyékvilág</item>
+        <item>No és én</item>
+        <item>Wings – Szárnyak</item>
+    </string-array>
+
+    <string-array name="shopping_item_desc">
+        <item>Jerry Spinelli</item>
+        <item>Az év legjobb young adult novellái</item>
+        <item>Erin Watt</item>
+        <item>Sarah Dessen</item>
+        <item>Róbert Katalin</item>
+        <item>Sarah Dessen</item>
+        <item>Laura Silverman</item>
+        <item>Marissa Meyer</item>
+        <item>Nic Stone</item>
+        <item>Courtney Summers</item>
+        <item>Amélie Antoine</item>
+        <item>Becca Fitzpatrick</item>
+        <item>Spirit Bliss</item>
+        <item>Delphine de Vigan</item>
+        <item>Aprilynne Pike</item>
+    </string-array>
+
+
+    <array name="shopping_item_images">
+        <item>@drawable/elso_konyv</item>
+        <item>@drawable/masodik_konyv</item>
+        <item>@drawable/harmadik_konyv</item>
+        <item>@drawable/negyedik_konyv</item>
+        <item>@drawable/otodik_konyv</item>
+        <item>@drawable/hatodik_konyv</item>
+        <item>@drawable/hetedik_konyv</item>
+        <item>@drawable/nyolcadik_konyv</item>
+        <item>@drawable/kilencedik_konyv</item>
+        <item>@drawable/tizedik_konyv</item>
+        <item>@drawable/tizenegyedik_konyv</item>
+        <item>@drawable/tizenkettedik_konyv</item>
+        <item>@drawable/tizenharmadik_konyv</item>
+        <item>@drawable/tizennegyedik_konyv</item>
+        <item>@drawable/tizenotodik_konyv</item>
+    </array>
+
+    <array name="shopping_item_price">
+        <item>1500 Ft</item>
+        <item>5000 Ft</item>
+        <item>2000 Ft</item>
+        <item>1300 Ft</item>
+        <item>1800 Ft</item>
+        <item>2700 Ft</item>
+        <item>2000 Ft</item>
+        <item>3500 Ft</item>
+        <item>3000 Ft</item>
+        <item>3000 Ft</item>
+        <item>2500 Ft</item>
+        <item>1300 Ft</item>
+        <item>3100 Ft</item>
+        <item>4300 Ft</item>
+        <item>5000 Ft</item>
+    </array>
+</resources>

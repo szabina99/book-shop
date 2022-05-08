@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/textWebshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ETUserName"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="12"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWebshop"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="336dp"
+        android:ems="12"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETUserName"
+        app:layout_constraintVertical_bias="0.168"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="228dp"
+        android:ems="12"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETEmail"
+        app:layout_constraintVertical_bias="0.132"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ETPasswordAgain"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:hint="@string/passwordAgain"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword"
+        app:layout_constraintVertical_bias="0.078"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ETAdress"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:hint="@string/adress"
+        android:maxLines="5"
+        android:inputType="textPostalAddress|textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPasswordAgain"
+        app:layout_constraintVertical_bias="0.078"
+        android:autofillHints="" />
+
+
+    <RadioGroup
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETAdress"
+        app:layout_constraintVertical_bias="0.219"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/customer" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registrationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="register"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETAdress"
+        app:layout_constraintVertical_bias="0.625"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cancel"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
